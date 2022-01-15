@@ -4,7 +4,6 @@ session_start();
     if(isset($_POST['alogin'])){
     $aemail=$_POST['aemail'];
     $apassword=$_POST['apassword'];
-    echo $aemail." ".$apassword;
     $sql="select aid,admin_email from admin_data where admin_email='$aemail' and admin_password='$apassword'";
     $result=mysqli_query($conn,$sql) or die(mysqli_error($conn));
     $rows_fetched=mysqli_num_rows($result);
