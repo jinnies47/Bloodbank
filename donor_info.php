@@ -11,7 +11,6 @@ session_start();
 	$res=mysqli_query($conn, $sql2);
 	$res=mysqli_fetch_array($res);
 	$ph_num=$res['ph_num'];
-	echo $ph_num;
 	$rbg=$_POST['rbg'];
 	$ldd=$_POST['last_donation_date'];
 	$age=$_POST['Age'];
