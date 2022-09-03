@@ -23,6 +23,7 @@ if(isset($_POST["verify"])){
         ?>
       <script>
           alert("Invalid OTP code");
+          window.location.replace('index.php');
       </script>
       <?php
     }else{

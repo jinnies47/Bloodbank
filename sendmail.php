@@ -20,11 +20,11 @@ try {
     $mail->SMTPAuth   = TRUE;                                   //Enable SMTP authentication
     $mail->Username   = 'bloodbank298@gmail.com';                     //SMTP username
 
-    $mail->Password   = 'Bloodbank@298';                               //SMTP password
+    $mail->Password   = 'kkpeunrqyinhbibp';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-
-    //Recipients
+    $mail->SMTPSecure='ssl';
+    //Recipients  
     $mail->setFrom('bloodbank298@gmail.com', 'Blood Bank Admin');
     $mail->addAddress($email);     //Add a recipient
     // $mail->addAddress('eg@gmail.com');
@@ -39,7 +39,6 @@ try {
     $mail->Subject = 'OTP : Blood Bank';
     $mail->Body    = 'Your OTP is : '+ $otp;
     // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-
     $mail->send();
     return 1;
 
