@@ -18,5 +18,6 @@ include "./file/connection.php";
     $error="You cannot make more than 1 request: " . mysqli_error($conn);
     header("location:./abs.php?error=".$error );
     }
+
     mysqli_close($conn);
 ?>
