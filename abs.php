@@ -40,7 +40,7 @@ $result = mysqli_query($conn, $sql);
           <input type="number" name="hid" placeholder="hospital id" class="form-control mb-3" required>
           <input type="number" name="userid" placeholder="user id" class="form-control mb-3" required>
 		  <a href="addrequest.php" class="btn btn-info mr-4"> Reset</a>
-			   <input type="submit" name="donate" class="btn btn-info" value="Donate Sample">
+			   <input type="submit" name="donate" class="btn btn-info" value="Request Blood">
         </form>
 
     </div>
