@@ -61,7 +61,7 @@ else {
 						<input type="submit" name="update" class="btn btn-block btn-primary" value="Update">
 					   </form>
 					</div>
-					<a href="index.php" class="text-center">Cancel</a><br>
+					<a href="abs.php" class="text-center">Cancel</a><br>
 				</div>
 			</div>
 		</div>
